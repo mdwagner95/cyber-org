@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake SMS - Package Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .sms-container {
+            width: 350px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+            max-width: 80%;
+        }
+        .sent {
+            background-color: #0078ff;
+            color: white;
+            align-self: flex-end;
+        }
+        .received {
+            background-color: #e5e5ea;
+            color: black;
+            align-self: flex-start;
+        }
+        .fake-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .fake-link:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="sms-container">
+        <div class="message received">Your package is out for delivery. Track here: <a href="#" class="fake-link" onmouseover="this.href='http://upss-track-my-package.comx/login'" onclick="alert('This is a simulated phishing attempt for cybersecurity training!')">trackmypackage.com</a></div>
+        <div class="message sent">Who is this from?</div>
+        <div class="message received">Carrier Service - Click the link to check delivery time.</div>
+    </div>
+</body>
+</html>

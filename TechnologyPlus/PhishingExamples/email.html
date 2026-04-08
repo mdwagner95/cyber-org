@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Email - Security Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: auto;
+        }
+        .header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .content {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .fake-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .fake-link:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">Your Account Needs Verification!</div>
+        <div class="content">
+            Dear User,<br><br>
+            We have detected suspicious activity on your account. To keep your account safe, please verify your identity immediately.
+            Click the link below to verify:
+            <br><br>
+            <a href="#" class="fake-link" onmouseover="this.href='http://malicious-site.comx/login'" onclick="alert('This is a simulated phishing attempt for cybersecurity training!')">Verify Your Account</a>
+            <br><br>
+            If you do not verify within 24 hours, your account may be locked.
+            <br><br>
+            Sincerely,<br>
+            Support Team
+        </div>
+    </div>
+</body>
+</html>

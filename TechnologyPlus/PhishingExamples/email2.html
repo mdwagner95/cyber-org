@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Email - Suspicious Sender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: auto;
+        }
+        .header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .meta-info {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .fake-sender {
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+        }
+        .fake-sender:hover::after {
+            content: " <support@ef163a643b7d3728cd6f873.com>";
+            color: red;
+            font-size: 14px;
+        }
+        .content {
+            font-size: 16px;
+            color: #555;
+        }
+        .fake-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .fake-link:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">Urgent: Security Alert</div>
+        <div class="meta-info">
+            From: <span class="fake-sender">Support Team</span><br>
+            To: bill.smith@gmail.com<br>
+            Date: March 7, 2025<br>
+            Subject: Verify Your Account Immediately
+        </div>
+        <div class="content">
+            Dear Bill,<br><br>
+            We have detected unusual login attempts on your account. To ensure your security, please verify your account by clicking the link below.
+            <br><br>
+            <a href="#" class="fake-link" onmouseover="this.href='http://mali-site.comx'" onclick="alert('This is a simulated phishing attempt for cybersecurity training!')">Verify Your Account</a>
+            <br><br>
+            If you do not take action within 24 hours, your account may be temporarily suspended.
+            <br><br>
+            Best regards,<br>
+            Support Team
+        </div>
+    </div>
+</body>
+</html>

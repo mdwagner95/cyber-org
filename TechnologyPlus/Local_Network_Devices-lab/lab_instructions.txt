@@ -1,0 +1,36 @@
+Cybersecurity Lab Instructions
+
+Objective:
+Students will set up and use the Apache2 web server to host and access files from a second device. This lab introduces core concepts in web services, file accessibility, and remote retrieval—all essential in cybersecurity and system administration.
+
+Tasks:
+1. Create a File
+   - Make a simple .txt or .html file (e.g., index.html, notes.txt) on your server device.
+
+2. Move the File to Apache’s Web Directory
+   - Use the command:
+     sudo cp <file_name> /var/www/html
+
+3. Start the Apache2 Web Server
+   - Run:
+     sudo service apache2 start
+   - (Kali Linux users can use the alias command: webserver_start)
+
+4. Access the File Remotely
+   - From another device or browser, go to:
+     http://<Webserver_IP>/<filename>
+   - Try different file types to see what loads vs downloads.
+
+5. Test with CLI Tools
+   - Use the wget command on a remote device to fetch your file:
+     wget http://<Webserver_IP>/<filename>
+
+6. (Optional Bonus)
+   - Try accessing or transferring files with FTP, SFTP, or SCP.
+
+Submit:
+- Screenshot of your web browser or terminal showing the file being accessed from the remote device.
+- A copy of your .html or .txt file.
+- A short reflection answering:
+  "Why is it important to understand how web servers serve files in cybersecurity?"
+"""
