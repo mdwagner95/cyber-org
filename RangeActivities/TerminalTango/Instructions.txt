@@ -1,0 +1,23 @@
+The Dance:
+Pascal is looking forward to attending 
+the school dance with her friends. They 
+have been making plans, and Pascal 
+doesn’t want to miss out on anything. 
+Help Pascal with her attire, the 
+restruant and flowers. 
+
+Attire:
+Navigate to the attire folder. There 
+are 6 various styles of attire to 
+choose from. Delete the 5 styles of 
+attire you would not want.
+
+Restaurant:
+Create a list of places to eat. 
+
+Flowers:
+There are 3 flower options. Find 
+the correct flowers and delete 
+the others. 
+
+

