@@ -1,0 +1,1 @@
+Attacker code that will encrypt all the files and then we will send a ransom demand.
